@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        img {
+            position: absolute
+        }
+
+        div {
+            position: absolute;
+            width: 500px;
+            height: 500px
+        }
+
+        #rightSide {
+            left: 500px;
+            border-left: 1px solid black
+        }
+    </style>
+    <script>
+        var numberOfFaces = 5;
+        function generateFaces() {
+            for (var i = 0; i < numberOfFaces; i++) {
+                var theLeftSide = document.getElementById("leftSide");
+                var newFace = document.createElement("img");
+                newFace.src = "smile.png";
+                newFace.style.left = String(Math.random()*400)+"px";
+                newFace.style.top = String(Math.random()*400)+"px";
+                theLeftSide.appendChild(newFace);
+            }
+        }
+    </script>
+</head>
+<body onload=generateFaces()>
+<h1>Matching Game</h1>
+<p>Click on the extra smiling face on the left</p>
+<div id="leftSide"></div>
+<div id="rightSide"></div>
+</body>
+</html>
