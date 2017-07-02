@@ -27,5 +27,6 @@ function solveRect(l, b) {
 
 solveRect(2, 4);
 solveRect(66,66);
+solveRect(77,77);
 solveRect(3, 5);
 solveRect(-3, 5);
