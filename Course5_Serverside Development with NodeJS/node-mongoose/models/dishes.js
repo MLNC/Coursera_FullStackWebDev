@@ -45,7 +45,6 @@ var dishSchema = new Schema({
     },
     label:{
         type: String,
-        required: true,
         default:""
     },
     price:{

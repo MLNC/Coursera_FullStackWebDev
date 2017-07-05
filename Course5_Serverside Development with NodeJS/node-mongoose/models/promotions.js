@@ -22,7 +22,6 @@ var promoSchema = new Schema({
     },
     label: {
         type: String,
-        required: true,
         default: ""
     },
     price: {
